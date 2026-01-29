@@ -92,11 +92,12 @@
 
   .toggle {
     display: block;
+    color: var(--white);
   }
 
   .header-ul {
     flex-direction: column;
-    background: white;
+    background: var(--white);
     position: fixed;
     top: 75px;
     /* Adjust based on header height */
@@ -123,5 +124,12 @@
     justify-content: flex-start;
     font-size: 1.1rem;
     padding: 0.8rem 1rem;
+    color: var(--text-color); /* Fix: Dark text on white background */
+  }
+
+  .header-li a:hover,
+  .header-li a.active {
+    color: var(--primary-color);
+    background-color: rgba(33, 130, 154, 0.1); /* Light primary color background */
   }
 }

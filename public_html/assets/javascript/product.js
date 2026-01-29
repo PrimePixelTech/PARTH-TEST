@@ -556,8 +556,6 @@ function handleMatchSelection(matchType) {
     // Simple logic mapping
     if (matchType === 'powder') targetCategory = 'jars';
     if (matchType === 'tablets') targetCategory = 'tubes'; // Mostly tubes
-    if (matchType === 'capsules') targetCategory = 'jars'; // Capsules often in jars too
-    if (matchType === 'liquids') targetCategory = 'jars'; // Could be bottles/jars
     
     // Update nav buttons
     document.querySelectorAll(".category-btn").forEach((b) => b.classList.remove("active"));

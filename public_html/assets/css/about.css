@@ -289,17 +289,66 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .section h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .gallery,
   .features-list,
   .expertise-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 columns */
+    gap: 0.8rem;
+  }
+
+  /* Compact card styles for mobile 2-column layout */
+  .expertise-card,
+  .feature-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .expertise-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    /* Icon size */
+    margin: 0 auto 0.5rem;
+    /* Center horizontally */
+  }
+
+  .feature-icon i {
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .expertise-card h3,
+  .feature-content h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .expertise-card p,
+  .feature-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .gallery-item {
+    height: 150px;
   }
 }
