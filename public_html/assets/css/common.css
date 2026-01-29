@@ -1,0 +1,112 @@
+/* --- Global Variables & Reset --- */
+:root {
+  /* Color Palette - Matching Product Page */
+  --primary-color: #21829a;
+  --secondary-color: #3ab4cc;
+  --accent-color: #ff7e33;
+  --dark-color: #1a3e4c;
+  --light-color: #f7fbfc;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --border-color: #e1e5e7;
+
+  /* Global Values */
+  --border-radius: 12px;
+  --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* Enhanced Premium Gradient */
+  /* Distinct 2-Color Gradient */
+  --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+
+  /* Layout */
+  --max-width: 1400px;
+  --header-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--light-color);
+  font-family: 'Poppins', sans-serif;
+  /* Global Font */
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Typography Utilities */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Specific Classes from your legacy code kept for compatibility but updated */
+.paragraphs {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.common-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .paragraphs {
+    font-size: 1rem;
+  }
+
+  .common-header {
+    font-size: 2rem;
+  }
+}

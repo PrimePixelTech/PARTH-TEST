@@ -1,0 +1,127 @@
+/* --- Navigation Styles --- */
+.header {
+  width: 100%;
+  background: var(--gradient);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 2rem;
+  transition: var(--transition);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-name {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .header-logo {
+  transform: scale(1.05);
+}
+
+.header-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-li {
+  position: relative;
+}
+
+.header-li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.header-li a:hover,
+.header-li a.active {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Toggle Menu (Hamburger) */
+.toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+  .header {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .header-ul {
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    top: 75px;
+    /* Adjust based on header height */
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 75px);
+    padding: 2rem 1.5rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-ul.active {
+    right: 0;
+  }
+
+  .header-li {
+    width: 100%;
+  }
+
+  .header-li a {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover premium packaging solutions from Parth Plasto Pack - plastic jars, tubes, and caps for all your needs." />
+  <title>Our Products - Parth Plasto Pack</title>
+  <link rel="icon" type="image/x-icon" href="https://i.imgur.com/your-favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/product.css">
+</head>
+
+<body>
+  <!-- Loading Spinner -->
+  <div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html" class="logo" aria-label="Homepage">
+        <img src="./assets/images/PPPLOGO.webp" alt="Parth Plasto Pack Logo" />
+      </a>
+      <nav class="main-nav">
+        <a href="./index.html" class="nav-link active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container" id="mainContainer">
+    <!-- Hero Section -->
+    <section class="product-hero" data-aos="fade-down">
+      <div class="hero-content">
+        <h1>Premium Packaging Solutions</h1>
+        <p>
+          Elevate your pharmaceutical and nutraceutical products with our high-quality,
+          custom-designed packaging. Precision engineered for safety and appeal.
+        </p>
+        <a href="#match-section" class="cta-button">Find Your Packaging</a>
+      </div>
+    </section>
+
+    <!-- Find Your Perfect Match Section -->
+    <section class="match-section" id="match-section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Find Your Perfect Match</h2>
+        <p>Select your product type to find the ideal packaging solution</p>
+      </div>
+
+      <div class="match-grid">
+        <div class="match-card" data-match="powder">
+          <div class="match-icon">
+            <i class="fa-solid fa-jar"></i>
+          </div>
+          <h3>Powders</h3>
+          <p>Protein, Supplements, Cocoa</p>
+        </div>
+        <div class="match-card" data-match="tablets">
+          <div class="match-icon">
+            <i class="fa-solid fa-tablets"></i>
+          </div>
+          <h3>Tablets</h3>
+          <p>Effervescent, Vitamins</p>
+        </div>
+        <div class="match-card" data-match="capsules">
+          <div class="match-icon">
+            <i class="fa-solid fa-capsules"></i>
+          </div>
+          <h3>Capsules</h3>
+          <p>Nutraceuticals, Pharma</p>
+        </div>
+        <div class="match-card" data-match="liquids">
+          <div class="match-icon">
+            <i class="fa-solid fa-bottle-droplet"></i>
+          </div>
+          <h3>Liquids</h3>
+          <p>Syrups, Tonics</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <div class="category-nav-wrapper" data-aos="fade-up">
+      <h2 class="section-title">Browse by Category</h2>
+      <div class="category-nav">
+        <button class="category-btn active" data-category="all">
+          <i class="fa-solid fa-border-all"></i> All Products
+        </button>
+        <button class="category-btn" data-category="jars">
+          <i class="fa-solid fa-box-archive"></i> Plastic Jars
+        </button>
+        <button class="category-btn" data-category="tubes">
+          <i class="fa-solid fa-flask"></i> Plastic Tubes
+        </button>
+        <button class="category-btn" data-category="caps">
+          <i class="fa-solid fa-circle-notch"></i> Plastic Caps
+        </button>
+      </div>
+    </div>
+
+    <!-- All Products Section (visible by default) -->
+    <div class="category-section" id="all-section">
+      <h2 class="category-title">Featured Products</h2>
+      <div class="products-grid" id="featured-products-grid">
+        <!-- Featured products will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <!-- Plastic Jars Section -->
+    <div class="category-section hidden" id="jars-section">
+      <h2 class="category-title">Plastic Jars</h2>
+
+      <!-- Small Jars Subsection -->
+      <div class="subcategory-section" data-subcategory="small-jars">
+        <h3 class="subcategory-title">Small Jars</h3>
+        <div class="products-grid" id="small-jars-grid">
+          <!-- Small jar products will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Medium Jars Subsection -->
+      <div class="subcategory-section" data-subcategory="medium-jars">
+        <h3 class="subcategory-title">Medium Jars</h3>
+        <div class="products-grid" id="medium-jars-grid">
+          <!-- Medium jar products will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Large Jars Subsection -->
+      <div class="subcategory-section" data-subcategory="large-jars">
+        <h3 class="subcategory-title">Large Jars</h3>
+        <div class="products-grid" id="large-jars-grid">
+          <!-- Large jar products will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Plastic Tubes Section -->
+    <div class="category-section hidden" id="tubes-section">
+      <h2 class="category-title">Plastic Tubes</h2>
+
+      <!-- Large Tubes Subsection -->
+      <div class="subcategory-section" data-subcategory="large-tubes">
+        <h3 class="subcategory-title">Large Tubes</h3>
+        <div class="products-grid" id="large-tubes-grid">
+          <!-- Large tube products will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Small Tubes Subsection -->
+      <div class="subcategory-section" data-subcategory="small-tubes">
+        <h3 class="subcategory-title">Small Tubes</h3>
+        <div class="products-grid" id="small-tubes-grid">
+          <!-- Small tube products will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Plastic Caps Section -->
+    <div class="category-section hidden" id="caps-section">
+      <h2 class="category-title">Plastic Caps</h2>
+      <div class="products-grid" id="caps-grid">
+        <!-- Cap products will be dynamically inserted here -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2024 Parth Plasto Pack. All Rights Reserved.</p>
+      <p>Premium Packaging Solutions for Your Products</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Popup Structure -->
+  <div class="popup-overlay"></div>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h2 class="popup-title" id="popup-title"></h2>
+      <button class="popup-close-btn" aria-label="Close popup">×</button>
+    </div>
+    <div class="popup-content">
+      <div class="popup-image-wrapper">
+        <img src="" alt="Product Image" class="popup-image" id="popup-image" />
+      </div>
+      <div class="popup-details">
+        <p class="product-code" id="popup-code"></p>
+        <p class="product-description" id="popup-description"></p>
+        <div class="action-buttons">
+          <a href="https://wa.me/919825626651" target="_blank" class="get-product-btn"
+            aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            Get Product
+          </a>
+          <a href="tel:+919825626651" target="_blank" class="get-product-btn call-btn" aria-label="Call us">
+            <i class="fas fa-phone"></i>
+            Call Now
+          </a>
+        </div>
+      </div>
+      <div class="spec-table-container">
+        <h3>Technical Specifications</h3>
+        <table class="spec-table">
+          <tbody id="spec-table-body">
+            <!-- Spec rows will be dynamically inserted here by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/javascript/product.js"></script>
+</body>
+
+</html>
