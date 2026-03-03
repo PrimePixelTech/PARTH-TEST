@@ -9,7 +9,7 @@ const productsData = [
       { label: "Label Type", value: "Label & IML" }, { label: "Weight Of Container (With Cap)", value: "38 +/- 2 GM" },
       { label: "Powder Volume (Approx)", value: "200 To 250 GM" }, { label: "Material", value: "Food-grade PP plastic" }
     ],
-    category: "jars", subcategory: "small-jars", usage: "powder", type: "Container"
+    category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
     id: 2, title: "Large Powder Container", imageSrc: "./assets/images/products/jar2.webp", code: "JAR-02",
@@ -21,7 +21,7 @@ const productsData = [
       { label: "Label Type", value: "Label & IML" }, { label: "Weight Of Container (With Cap)", value: "38 +/- 2 GM" },
       { label: "Powder Volume (Approx)", value: "200 To 250 GM" }, { label: "Material", value: "Food-grade PP plastic" }
     ],
-    category: "jars", subcategory: "small-jars", usage: "powder", type: "Container"
+    category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
     id: 3, title: "Chocolate Powder Jar", imageSrc: "./assets/images/products/jar3.webp", code: "JAR-03",
@@ -36,7 +36,7 @@ const productsData = [
     category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
-    id: 4, title: "Weight Management Tub", imageSrc: "./assets/images/products/jar4.webp", code: "JAR-04",
+    id: 4, title: "Profit", imageSrc: "./assets/images/products/jar4.webp", code: "JAR-04",
     description: "Sleek and modern tub designed specifically for weight management products. Features a wide opening for easy access and a secure lid to maintain product freshness. Ideal for meal replacements and diet supplements.",
     specifications: [
       { label: "Over Flow Volume", value: "560 +/- 20 ML" }, { label: "Height Of Container", value: "114 +/- 1 MM" },
@@ -45,7 +45,7 @@ const productsData = [
       { label: "Label Type", value: "Label & IML" }, { label: "Weight Of Container (With Cap)", value: "38 +/- 2 GM" },
       { label: "Powder Volume (Approx)", value: "200 To 250 GM" }, { label: "Material", value: "Food-grade PP plastic" }
     ],
-    category: "jars", subcategory: "small-jars", usage: "powder", type: "Tub"
+    category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
     id: 5, title: "Compact Powder Jar", imageSrc: "./assets/images/products/jar5.webp", code: "JAR-05",
@@ -60,7 +60,7 @@ const productsData = [
     category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
-    id: 6, title: "Mid-Size Gainer Tub", imageSrc: "./assets/images/products/jar6.webp", code: "JAR-06",
+    id: 6, title: "Us Pro", imageSrc: "./assets/images/products/jar6.webp", code: "JAR-06",
     description: "A mid-size tub perfect for mass gainers and larger supplement quantities. The sturdy handle-cap design ensures easy transport and handling.",
     specifications: [
       { label: "Over Flow Volume", value: "560 +/- 20 ML" }, { label: "Height Of Container", value: "114 +/- 1 MM" },
@@ -69,7 +69,7 @@ const productsData = [
       { label: "Label Type", value: "Label & IML" }, { label: "Weight Of Container (With Cap)", value: "38 +/- 2 GM" },
       { label: "Powder Volume (Approx)", value: "200 To 250 GM" }, { label: "Material", value: "Food-grade PP plastic" }
     ],
-    category: "jars", subcategory: "small-jars", usage: "powder", type: "Tub"
+    category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
     id: 7, title: "Pre-Workout Container", imageSrc: "./assets/images/products/jar7.webp", code: "JAR-07",
@@ -81,7 +81,7 @@ const productsData = [
       { label: "Label Type", value: "Label & IML" }, { label: "Weight Of Container (With Cap)", value: "38 +/- 2 GM" },
       { label: "Powder Volume (Approx)", value: "200 To 250 GM" }, { label: "Material", value: "Food-grade PP plastic" }
     ],
-    category: "jars", subcategory: "small-jars", usage: "powder", type: "Container"
+    category: "jars", subcategory: "small-jars", usage: "powder", type: "Jar"
   },
   {
     id: 8, title: "Herbal Powder Jar", imageSrc: "./assets/images/products/jar8.webp", code: "JAR-08",
